@@ -50,8 +50,8 @@
             "¿Cómo que no?",
             "No te hagas la chistosa",
             "Ya dime que sí :(",
-            "¿Entonces me voy con otra?",
             "Piénsalo bien tonti",
+            "¿Entonces me voy con otra?",
             "Bien que quieres:)"
         ];
         let images = [
