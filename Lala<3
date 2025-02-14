@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Valentín</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .yes-button {
+            font-size: 20px;
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .no-button {
+            font-size: 20px;
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img id="image" src="https://i.imgur.com/PkGoyLV.png" alt="Dibujo de ositos enamorados" width="200">
+        <h2>¿Quieres ser mi San Valentín?</h2>
+        <button class="yes-button" id="yes">Sí</button>
+        <button class="no-button" id="no">No</button>
+    </div>
+    
+    <script>
+        let yesButton = document.getElementById("yes");
+        let noButton = document.getElementById("no");
+        let image = document.getElementById("image");
+        let size = 20;
+
+        noButton.addEventListener("click", function() {
+            size += 10;
+            yesButton.style.fontSize = size + "px";
+            yesButton.style.padding = (size / 2) + "px " + (size) + "px";
+        });
+
+        yesButton.addEventListener("click", function() {
+            image.src = "https://i.imgur.com/YOUR_NEW_IMAGE.png";
+        });
+    </script>
+</body>
+</html>
