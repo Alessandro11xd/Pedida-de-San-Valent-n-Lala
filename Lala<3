@@ -67,7 +67,7 @@
             document.querySelector("h2").textContent = "¡Sabía que dirías que sí! ❤️";
             yesButton.style.display = "none";
             noButton.style.display = "none";
-            image.src = ![Image](https://github.com/user-attachments/assets/9e0423d7-0768-40a3-8b31-bc8595bd4eba)
+            image.src = "https://github.com/user-attachments/assets/9e0423d7-0768-40a3-8b31-bc8595bd4eba"
         });
     </script>
 </body>
