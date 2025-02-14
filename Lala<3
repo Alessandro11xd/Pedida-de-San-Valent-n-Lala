@@ -44,16 +44,32 @@
         let noButton = document.getElementById("no");
         let image = document.getElementById("image");
         let size = 20;
+        let phrases = [
+            "Segura?",
+            "¿Cómo que no?",
+            "No te hagas la chistosa",
+            "Ya dime que sí :(",
+            "¿Entonces me voy con otra?",
+            "Piénsalo muy bien"
+        ];
+        let index = 0;
 
         noButton.addEventListener("click", function() {
             size += 10;
             yesButton.style.fontSize = size + "px";
             yesButton.style.padding = (size / 2) + "px " + (size) + "px";
+
+            noButton.textContent = phrases[index];
+            index = (index + 1) % phrases.length;
         });
 
         yesButton.addEventListener("click", function() {
-            image.src = "https://i.imgur.com/YOUR_NEW_IMAGE.png";
+            document.querySelector("h2").textContent = "¡Sabía que dirías que sí! ❤️";
+            yesButton.style.display = "none";
+            noButton.style.display = "none";
+            image.src = "https://i.imgur.com/YOUR_NEW_IMAGE.png"; // Cambia esta URL por la imagen que quieras
         });
     </script>
 </body>
 </html>
+
