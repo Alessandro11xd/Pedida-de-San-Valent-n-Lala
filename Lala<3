@@ -33,8 +33,8 @@
 </head>
 <body>
     <div class="container">
-        <img id="image" src="https://github.com/Alessandro11xd/Pedida-de-San-Valent-n-Lala/blob/main/IMG-20230728-WA0044.jpg?raw=true" 
-             alt="Dibujo de ositos enamorados" width="200">
+        <img id="image" src="https://github.com/Alessandro11xd/Pedida-de-San-Valent-n-Lala/blob/main/IMG-20230725-WA0015.jpg?raw=true" 
+             alt="Imagen de San Valentín" width="200">
         <h2>¿Quieres ser mi San Valentín?</h2>
         <button class="yes-button" id="yes">Sí</button>
         <button class="no-button" id="no">No</button>
@@ -51,24 +51,38 @@
             "No te hagas la chistosa",
             "Ya dime que sí :(",
             "¿Entonces me voy con otra?",
-            "Piénsalo muy bien"
+            "Piénsalo muy bien",
+            "No te pases :("
         ];
+        let images = [
+            "https://github.com/Alessandro11xd/Pedida-de-San-Valent-n-Lala/blob/main/IMG-20230725-WA0015.jpg?raw=true",
+            "https://github.com/Alessandro11xd/Pedida-de-San-Valent-n-Lala/blob/main/IMG-20220522-WA0053.jpg?raw=true",
+            "https://github.com/Alessandro11xd/Pedida-de-San-Valent-n-Lala/blob/main/IMG-20220115-WA0042.jpg?raw=true",
+            "https://github.com/Alessandro11xd/Pedida-de-San-Valent-n-Lala/blob/main/IMG-20221228-WA0019.jpg?raw=true",
+            "https://github.com/Alessandro11xd/Pedida-de-San-Valent-n-Lala/blob/main/IMG-20221223-WA0023.jpg?raw=true",
+            "https://github.com/Alessandro11xd/Pedida-de-San-Valent-n-Lala/blob/main/IMG-20240421-WA0009.jpg?raw=true",
+            "https://github.com/Alessandro11xd/Pedida-de-San-Valent-n-Lala/blob/main/IMG-20220605-WA0018.jpg?raw=true"
+        ];
+        let finalImage = "https://github.com/Alessandro11xd/Pedida-de-San-Valent-n-Lala/blob/main/IMG-20230728-WA0044.jpg?raw=true";
         let index = 0;
 
         noButton.addEventListener("click", function() {
+            if (index < images.length - 1) {
+                index++;
+            }
             size += 10;
             yesButton.style.fontSize = size + "px";
             yesButton.style.padding = (size / 2) + "px " + (size) + "px";
-
-            noButton.textContent = phrases[index];
-            index = (index + 1) % phrases.length;
+            
+            noButton.textContent = phrases[index % phrases.length];
+            image.src = images[index];
         });
 
         yesButton.addEventListener("click", function() {
             document.querySelector("h2").textContent = "¡Sabía que dirías que sí! ❤️";
             yesButton.style.display = "none";
             noButton.style.display = "none";
-            image.src = "https://github.com/Alessandro11xd/Pedida-de-San-Valent-n-Lala/blob/main/IMG-20230728-WA0044.jpg?raw=true"; 
+            image.src = finalImage;
         });
     </script>
 </body>
