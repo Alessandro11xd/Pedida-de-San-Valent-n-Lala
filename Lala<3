@@ -50,8 +50,8 @@
             "¿Cómo que no?",
             "No te hagas la chistosa",
             "Ya dime que sí :(",
-            "Piénsalo bien tonti",
             "¿Entonces me voy con otra?",
+            "Piénsalo bien tonti",
             "Bien que quieres:)"
         ];
         let images = [
@@ -59,8 +59,8 @@
             "https://github.com/Alessandro11xd/Pedida-de-San-Valent-n-Lala/blob/main/IMG-20220522-WA0053.jpg?raw=true",
             "https://github.com/Alessandro11xd/Pedida-de-San-Valent-n-Lala/blob/main/IMG-20220115-WA0042.jpg?raw=true",
             "https://github.com/Alessandro11xd/Pedida-de-San-Valent-n-Lala/blob/main/IMG-20221228-WA0019.jpg?raw=true",
-            "https://github.com/Alessandro11xd/Pedida-de-San-Valent-n-Lala/blob/main/IMG-20240421-WA0009.jpg?raw=true",
             "https://github.com/Alessandro11xd/Pedida-de-San-Valent-n-Lala/blob/main/IMG-20221223-WA0023.jpg?raw=true",
+            "https://github.com/Alessandro11xd/Pedida-de-San-Valent-n-Lala/blob/main/IMG-20240421-WA0009.jpg?raw=true",
             "https://github.com/Alessandro11xd/Pedida-de-San-Valent-n-Lala/blob/main/IMG-20220605-WA0018.jpg?raw=true"
         ];
         let finalImage = "https://github.com/Alessandro11xd/Pedida-de-San-Valent-n-Lala/blob/main/IMG-20230728-WA0044.jpg?raw=true";
