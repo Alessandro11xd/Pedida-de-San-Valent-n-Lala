@@ -33,7 +33,7 @@
 </head>
 <body>
     <div class="container">
-        <img id="image" src="https://i.imgur.com/PkGoyLV.png" alt="Dibujo de ositos enamorados" width="200">
+        <img id="image" src="https://github.com/Alessandro11xd/Pedida-de-San-Valent-n-Lala/blob/main/IMG-20230728-WA0044.jpg" alt="Dibujo de ositos enamorados" width="200">
         <h2>¿Quieres ser mi San Valentín?</h2>
         <button class="yes-button" id="yes">Sí</button>
         <button class="no-button" id="no">No</button>
