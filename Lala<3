@@ -67,7 +67,7 @@
             document.querySelector("h2").textContent = "¡Sabía que dirías que sí! ❤️";
             yesButton.style.display = "none";
             noButton.style.display = "none";
-            image.src = "https://github.com/Alessandro11xd/Pedida-de-San-Valent-n-Lala/issues/1#issue-2852699783"; // Cambia esta URL por la imagen que quieras
+            image.src = "https://github.com/Alessandro11xd/Pedida-de-San-Valent-n-Lala/blob/main/IMG-20230728-WA0044.jpg?raw=true"; // Cambia esta URL por la imagen que quieras
         });
     </script>
 </body>
